@@ -1,0 +1,206 @@
+7
+class Butterfly{
+	
+	static String colour;
+	static String type;
+	int length;
+	int flyingHeight;
+	
+	Butterfly(int length,int flyingHeight){
+		System.out.println("invoking in the constructor");
+		this.length=length;
+		this.flyingHeight=flyingHeight;
+		
+	}
+	
+	static {
+		colour="black";
+		type="small";
+		
+		
+	}
+	static void printStatic(){
+		System.out.println("invoking in the printStatic");
+		System.out.println("colour of the Butterfly"+colour);
+		System.out.println("type of the Butterfly"+type);
+		
+	}
+	void printInstance(){
+		System.out.println("invoking in the printInstance");
+		System.out.println("length of the butterfly"+this.lengt);
+		System.out.println("flyingHeight of the Butterfly"+this.flyingHeight);
+		
+		
+	}
+
+      }
+ =========================================================================================================
+
+	class Main{
+	public static void main(String[] args)
+	{
+	System.out.println("Invoking main in Main");	
+		
+		
+		Butterfly b2=new Butterfly(44,55);
+		b2.printInstance();
+		b2.printStatic();
+	}
+      }
+	
+===================================================================================================================
+    1.Method overloading 
+     the metod having same class name but diffrent in their parameter
+
+class Carpenter{
+	
+
+	static void skill()
+	{
+		System.out.println("Running skill() in Carpenter");
+	}
+	
+	static void skill(String name)
+	{
+		System.out.println("Running skill(String) in Carpenter and his name is "+name);
+	}
+	
+
+	
+	static void measure(int length)
+	{
+		System.out.println("Measuring the length ="+length);
+	}
+	
+	static void measure(int length,int breadth)
+	{
+		System.out.println("Measuring the length ="+length +"and breadth = "+breadth);
+	}
+
+	
+	static void details(String name)
+	{
+		System.out.println("The name of the carpenter is "+name);
+	}
+	
+	static void contact(long phoneNumber)
+	{
+		System.out.println("The contact detail of carpenter is "+phoneNumber);
+	}
+	
+	static void address(String address)
+	{
+		System.out.println("The address of carpenter is "+address);
+	}
+	
+	static void experience(int exp)
+	{
+		System.out.println("The experience of carpenter is "+exp);
+	}
+	
+
+	
+	static void frame()
+	{
+		System.out.println("Running frame in carpenter");
+		
+		repair();
+	}
+	
+	static void repair()
+	{
+		System.out.println("Running repair in Carpenter");
+	}
+	
+	
+}
+==============================================================================================================================================================
+    class CarpenterRunner{
+	public static void main(String [] args)
+	{
+		System.out.println("Running main in CarpenterRunner");
+		
+		Carpenter.skill();
+	    Carpenter.skill("plaining");
+		Carpenter.measure(12);
+		Carpenter.measure(12,10);
+		Carpenter.details("Ganesh");
+		Carpenter.contact(7483166506l);
+		Carpenter.address("Bhadravthi");
+		Carpenter.experience(4);
+		
+	
+		Carpenter.frame();
+		
+	}
+}
+======================================================================================================================
+  6.static variable and method
+class Job{
+	
+	static void apply()
+	{
+		System.out.println("i applied for job");
+		
+	}
+	
+	static void apply(String personName,int exp){
+			System.out.println("i applied for job");
+			System.out.println("name="+personName+ "  experience="+exp);		
+         }
+    static void ref()
+	{
+				System.out.println("i ref for job");
+
+	}
+	  static void ref(String Name,int exp,String refName){
+		  System.out.println("i ref for job");
+		  System.out.println("Name="+Name+" experience="+exp+"refName="+refName);
+	  }
+	  static void rejectoffer()
+	  {
+		  System.out.println("i reject for job");
+	  }
+	  
+	public static void main(String[] args){
+		Job.apply();
+		Job.apply("vikranth",3);
+		Job.ref("danush",4,"danush");
+		Job.rejectoffer();
+		}
+}	
+=============================================================================================
+4.constructer overloading
+
+	
+	
+	
+	
+	
+
+   
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
